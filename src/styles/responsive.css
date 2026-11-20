@@ -1,0 +1,284 @@
+@media (max-width: 1080px) {
+  .primary-nav__list {
+    gap: 15px;
+  }
+
+  .hero__inner {
+    gap: 36px;
+  }
+
+  .hero__title {
+    max-width: 14ch;
+  }
+
+  .skills-grid > :nth-child(n) {
+    grid-column: span 6;
+  }
+
+  .certifications-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 900px) {
+  html {
+    scroll-padding-top: 76px;
+  }
+
+  .site-header__inner {
+    min-height: 64px;
+  }
+
+  .primary-nav {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    display: none;
+    margin-left: 0;
+    border-bottom: 1px solid var(--line);
+    background: var(--header-bg);
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+  }
+
+  .primary-nav.is-open {
+    display: block;
+  }
+
+  .primary-nav__list {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 2px;
+    padding: 14px 24px 22px;
+  }
+
+  .primary-nav__link {
+    display: block;
+    padding-block: 10px;
+  }
+
+  .primary-nav__link.is-active::after {
+    right: auto;
+    bottom: 7px;
+    left: 0;
+    width: 18px;
+  }
+
+  .primary-nav__mobile-contact {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .primary-nav__mobile-contact .btn {
+    width: 100%;
+  }
+
+  .header-contact {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: grid;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-block: 96px 88px;
+  }
+
+  .hero__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .hero__copy {
+    max-width: 720px;
+  }
+
+  .hero__title {
+    max-width: 18ch;
+  }
+
+  .hero__visual {
+    width: 100%;
+    max-width: 640px;
+    margin-inline: auto;
+  }
+
+  .about-layout {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .about-layout__lead p {
+    max-width: 32ch;
+  }
+
+  .experience-card__header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .projects-grid__item,
+  .projects-grid__item--wide {
+    grid-column: span 6;
+  }
+
+  .site-footer__inner {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 700px) {
+  .container {
+    width: min(calc(100% - 32px), var(--container));
+  }
+
+  .section-shell {
+    padding-block: 72px;
+  }
+
+  .hero {
+    padding-block: 76px 70px;
+  }
+
+  .hero__title {
+    font-size: clamp(2.8rem, 11vw, 4.2rem);
+  }
+
+  .hero__meta {
+    flex-wrap: wrap;
+  }
+
+  .about-highlights {
+    grid-template-columns: 1fr;
+  }
+
+  .skill-group,
+  .skills-grid > :nth-child(n) {
+    grid-column: span 12;
+  }
+
+  .projects-grid__item,
+  .projects-grid__item--wide {
+    grid-column: span 12;
+  }
+
+  .certifications-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .articles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .writing-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .presence-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .contact-panel {
+    padding: 28px 22px;
+    border-radius: 20px;
+  }
+
+  .site-footer__inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 520px) {
+  .site-header__inner {
+    gap: 12px;
+  }
+
+  .wordmark__mark {
+    width: 32px;
+    height: 32px;
+  }
+
+  .wordmark__name {
+    font-size: 14px;
+  }
+
+  .theme-toggle,
+  .menu-toggle {
+    width: 36px;
+    height: 36px;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .hero__social {
+    gap: 18px;
+  }
+
+  .hero-graph__caption {
+    padding-right: 20px;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(2.2rem, 10vw, 3rem);
+  }
+
+  .experience-timeline {
+    padding-left: 24px;
+  }
+
+  .experience-card__marker {
+    left: -24px;
+  }
+
+  .experience-card__content {
+    padding: 22px 18px;
+  }
+
+  .experience-card__dates {
+    width: fit-content;
+  }
+
+  .project-card__body {
+    padding: 20px;
+  }
+
+  .project-card__visual,
+  .project-card--featured .project-card__visual {
+    height: 150px;
+  }
+
+  .project-visual--reviews {
+    padding-inline: 18px;
+  }
+
+  .review-core {
+    right: 14px;
+    width: 74px;
+    height: 74px;
+    border-radius: 18px;
+    font-size: 12px;
+  }
+
+  .presence-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-links {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .contact-email {
+    width: 100%;
+    overflow-wrap: anywhere;
+  }
+}

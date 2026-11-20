@@ -1,0 +1,86 @@
+:root {
+  color-scheme: dark;
+
+  --font-display: 'Space Grotesk', 'Segoe UI', sans-serif;
+  --font-body: 'IBM Plex Sans', 'Segoe UI', sans-serif;
+
+  --step--1: clamp(0.82rem, 0.79rem + 0.15vw, 0.9rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.1rem);
+  --step-1: 1.25rem;
+  --step-2: clamp(1.55rem, 1.35rem + 0.9vw, 2rem);
+  --step-3: clamp(2.1rem, 1.7rem + 1.8vw, 3rem);
+  --step-4: clamp(2.4rem, 1.9rem + 2.4vw, 4rem);
+  --step-5: clamp(3.1rem, 2.25rem + 4vw, 5.4rem);
+
+  --container: 1180px;
+  --radius-sm: 10px;
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --transition: 220ms cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  --bg: #060b1a;
+  --surface: #0d1935;
+  --surface-2: #111f42;
+  --header-bg: rgba(6, 11, 26, 0.76);
+  --text: #eef3ff;
+  --text-muted: #9aa8c7;
+  --accent: #5b7cfa;
+  --accent-hover: #7490ff;
+  --accent-deep: #3f5fe0;
+  --violet: #8b5cf6;
+  --signal: #5fe3d2;
+  --signal-soft: rgba(95, 227, 210, 0.14);
+  --negative: #f28d8d;
+  --button-text: #ffffff;
+  --line: rgba(139, 168, 255, 0.16);
+  --line-strong: rgba(139, 168, 255, 0.32);
+  --accent-soft: rgba(91, 124, 250, 0.15);
+  --accent-shadow: rgba(47, 79, 214, 0.28);
+  --shadow: 0 24px 60px rgba(2, 6, 23, 0.35);
+  --mesh-line: #7a9dff;
+  --mesh-node: #8fb0ff;
+  --glow-blue: rgba(60, 96, 220, 0.22);
+  --glow-violet: rgba(139, 92, 246, 0.15);
+  --visual-bg: #101d3b;
+  --visual-glow: rgba(91, 124, 250, 0.18);
+  --graph-grid: rgba(139, 168, 255, 0.11);
+  --graph-line: rgba(139, 168, 255, 0.28);
+  --graph-core: rgba(16, 31, 66, 0.92);
+  --graph-core-stroke: rgba(95, 227, 210, 0.5);
+  --signal-glow: rgba(95, 227, 210, 0.45);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+
+  --bg: #f3f6ff;
+  --surface: #ffffff;
+  --surface-2: #e9efff;
+  --header-bg: rgba(243, 246, 255, 0.86);
+  --text: #121b33;
+  --text-muted: #52617f;
+  --accent: #3557e8;
+  --accent-hover: #2444cf;
+  --accent-deep: #2340b8;
+  --violet: #7448d8;
+  --signal: #0e9c8c;
+  --signal-soft: rgba(14, 156, 140, 0.12);
+  --negative: #cf5555;
+  --button-text: #ffffff;
+  --line: rgba(35, 61, 130, 0.16);
+  --line-strong: rgba(35, 61, 130, 0.3);
+  --accent-soft: rgba(53, 87, 232, 0.1);
+  --accent-shadow: rgba(53, 87, 232, 0.16);
+  --shadow: 0 24px 60px rgba(31, 53, 110, 0.1);
+  --mesh-line: #5670b8;
+  --mesh-node: #3d5aa6;
+  --glow-blue: rgba(53, 87, 232, 0.12);
+  --glow-violet: rgba(116, 72, 216, 0.1);
+  --visual-bg: #f8faff;
+  --visual-glow: rgba(53, 87, 232, 0.12);
+  --graph-grid: rgba(35, 61, 130, 0.1);
+  --graph-line: rgba(35, 61, 130, 0.26);
+  --graph-core: rgba(255, 255, 255, 0.94);
+  --graph-core-stroke: rgba(14, 156, 140, 0.48);
+  --signal-glow: rgba(14, 156, 140, 0.3);
+}

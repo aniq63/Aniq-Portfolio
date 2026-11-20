@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      (function () {
+        var saved = null
+        try {
+          saved = window.localStorage.getItem('aniq-portfolio-theme')
+        } catch (error) {
+          saved = null
+        }
+        document.documentElement.dataset.theme =
+          saved === 'light' || saved === 'dark' ? saved : 'dark'
+      })()
+    </script>
+    <meta name="theme-color" content="#060B1A" />
+    <meta
+      name="description"
+      content="Aniq Ramzan is a Machine Learning Engineer building practical ML systems, LLM applications, and intelligent software from data to deployment."
+    />
+    <meta
+      property="og:title"
+      content="Aniq Ramzan — Machine Learning Engineer"
+    />
+    <meta
+      property="og:description"
+      content="Machine learning systems, LLM applications, and deployed AI products. Explore the work of Aniq Ramzan."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://github.com/aniq63" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aniq Ramzan — Machine Learning Engineer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
